@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import About from './About';
 import Work from './Work';
 import Contact from './Contact';
@@ -9,12 +9,23 @@ import blockBusterBeats from '../assets/blockbuster-beat-logo.png';
 function Portfolio() {
     const [activeSection, setActiveSection] = useState('about');
 
-    useEffect(() => {
-        document.getElementById(activeSection)?.scrollIntoView({ behavior: 'smooth' });
-    }, [activeSection]);
+    const renderSection = () => {
+        switch (activeSection) {
+            case 'about':
+                return <About sarahImage={sarahImage} />;
+            case 'work':
+                return <Work blockBusterBeats={blockBusterBeats} />;
+            case 'contact':
+                return <Contact />;
+            case 'resume':
+                return <Resume />;
+            default:
+                return null;
+        }
+    };
 
-    const scrollToSection = (id) => {
-        setActiveSection(id);
+    const handleNavigationClick = (section) => {
+        setActiveSection(section);
     };
 
     return (
@@ -26,30 +37,27 @@ function Portfolio() {
                 <nav id="nav">
                     <ul>
                         <li className={activeSection === 'about' ? 'active' : ''}>
-                            <button onClick={() => scrollToSection('about')}>About Me</button>
+                            <button onClick={() => handleNavigationClick('about')}>About Me</button>
                         </li>
                         <li className={activeSection === 'work' ? 'active' : ''}>
-                            <button onClick={() => scrollToSection('work')}>Portfolio</button>
+                            <button onClick={() => handleNavigationClick('work')}>Portfolio</button>
                         </li>
                         <li className={activeSection === 'contact' ? 'active' : ''}>
-                            <button onClick={() => scrollToSection('contact')}>Contact Me</button>
+                            <button onClick={() => handleNavigationClick('contact')}>Contact Me</button>
                         </li>
                         <li className={activeSection === 'resume' ? 'active' : ''}>
-                            <button onClick={() => scrollToSection('resume')}>Resume</button>
+                            <button onClick={() => handleNavigationClick('resume')}>Resume</button>
                         </li>
                     </ul>
                 </nav>
             </header>
 
             <main>
-                <About sarahImage={sarahImage} />
-                <Work blockBusterBeats={blockBusterBeats} />
-                <Contact />
-                <Resume />
+                {renderSection()}
             </main>
 
             <footer className="footer">
-                <h4>Contact Me</h4>
+                <h4>Connect with Me</h4>
                 <nav>
                     <ul>
                         <li>
