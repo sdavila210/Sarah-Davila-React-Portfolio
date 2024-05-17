@@ -58,7 +58,7 @@ function Portfolio() {
 
             <footer className="footer">
                 <h4>Connect with Me</h4>
-                <nav>
+                <nav id="footernav">
                     <ul>
                         <li>
                             <a href="mailto:sarahjdavila210@gmail.com">sarahjdavila210@gmail.com</a>

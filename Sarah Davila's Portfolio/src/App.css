@@ -42,6 +42,23 @@
   color: #ff4d8f;
 }
 
+/*section styles*/
+
+.about,
+.work,
+.contact,
+.resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
 /*footer styles*/
 .footer {
   background-color: rgba(242, 244, 244, 0.896);
@@ -58,4 +75,10 @@
 
 .footer a:hover {
   color: #ff4d8f;
+}
+
+#footernav ul li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
