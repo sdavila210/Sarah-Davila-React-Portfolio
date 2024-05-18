@@ -4,7 +4,7 @@ My professional portfolio created using React which displays my latest projects.
 ## Description
 This is a webpage displaying information about myself, showcasing all of the projects that I have completed throughout the bootcamp, and providing links of the best ways to contact me. 
 
- ![JATE web application appearance](./assets/JATEscreenshot.png)
+ ![Portfolio application appearance](/Sarah-Davila-Portfolio/src/assets/Portfolioimage.png)
   
   ## Table of Contents
   1. [Installation](#installation)
