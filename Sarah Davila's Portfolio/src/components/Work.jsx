@@ -1,8 +1,18 @@
 import blockBusterBeats from '../assets/blockbuster-beat-logo.png'
+import expenseexplorer from '../assets/expenseexplorerpic.png'
+import javascriptquiz from '../assets/javascriptquiz.png'
+import weatherdash from '../assets/weatherdash.png'
+import passwordgen from '../assets/passwordgen.png'
+import workdayschedule from '../assets/workdayschedule.png'
 
 function Work() {
     const projects = [
         { title: 'BlockBuster Beats', imageUrl: blockBusterBeats, liveLink: 'https://sdavila210.github.io/blockbuster-beats/', repoLink: 'https://github.com/sdavila210/blockbuster-beats' },
+        { title: 'ExpenseExplorer', imageUrl: expenseexplorer, liveLink: 'https://express-explorer-ef6c4c2d378e.herokuapp.com/', repoLink: 'https://github.com/sdavila210/expense-explorer' },
+        { title: 'Javascript Quiz', imageUrl: javascriptquiz, liveLink: 'https://sdavila210.github.io/javascript-quiz/', repoLink: 'https://github.com/sdavila210/javascript-quiz' },
+        { title: 'Weather Dashboard', imageUrl: weatherdash, liveLink: 'https://sdavila210.github.io/weather-dashboard/', repoLink: 'https://github.com/sdavila210/weather-dashboard' },
+        { title: 'Password Generator', imageUrl: passwordgen, liveLink: 'https://sdavila210.github.io/password-generator/', repoLink: 'https://github.com/sdavila210/password-generator' },
+        { title: 'Work Day Scheduler', imageUrl: workdayschedule, liveLink: 'https://sdavila210.github.io/work-day-scheduler/', repoLink: 'https://github.com/sdavila210/work-day-scheduler' },
     ];
 
     return (

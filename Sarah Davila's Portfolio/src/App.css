@@ -59,6 +59,62 @@
   box-sizing: border-box;
 }
 
+.article {
+  text-align: center;
+  /* Ensure all content inside article is centered */
+}
+
+.photo {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
+  border-radius: 15px;
+}
+
+/* Work section styles */
+.projects {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.project {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.links {
+  margin-top: 10px;
+}
+
+.links a {
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: rgb(234, 142, 158);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.links a:hover {
+  background-color: #f5578b;
+}
+
 /*footer styles*/
 .footer {
   background-color: rgba(242, 244, 244, 0.896);
